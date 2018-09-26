@@ -1,0 +1,26 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>movie</title>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<script>
+var video;
+      window.onload =function(){ 
+video = document.getElementById("video1");
+               video.play();
+      };
+wx.ready(function () {
+        video.play()
+ })
+</script>
+<button type="button" onclick="video.play()" style="width:200px">播放</button>
+<button type="button" onclick="video.pause()" style="width:200px">停止</button>
+<video id="video1" width="100%" height="100%" controls="controls"  autoplay="autoplay" loop="loop">
+  <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+</video>
+</body>
+</html>
